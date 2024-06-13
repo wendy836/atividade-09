@@ -1,0 +1,86 @@
+ <html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato SENAI</title>
+    <style>
+        /* Estilos para centralizar a página */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: none;
+            width: 100%;
+        }
+        table td {
+            padding: 10px;
+            text-align: left;
+        }
+        table label {
+            display: inline-block;
+            width: 100px; /* Adjust width as needed */
+        }
+        table input[type="text"],
+        table input[type="email"],
+        table textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- Envolve todo o conteúdo -->
+        <header>
+            <h1>Contato SENAI</h1>
+        </header>
+        
+        <main>
+            <table>
+                <tr>
+                    <td>
+                        <p>Entre em contato conosco para mais informações sobre nossos cursos e serviços.</p>
+                        
+                        <h2>Informações de Contato</h2>
+                        <ul>
+                            <li>Telefone: (11) 2088-7120</li>
+                            <li>Email: contato0001060111@senai.com.br</li>
+                            <li>Endereço: R. Rio de Janeiro, 471 - Centro, Belo Horizonte - MG, 30160-040</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Formulário de Contato</h2>
+                        <form action="enviar.php" method="post">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required><br>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br>
+                            
+                            <label for="mensagem">Mensagem:</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+                            
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        
+        <footer>
+</body>
+</html>
